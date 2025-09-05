@@ -12,13 +12,9 @@ keywords:
     - Tilt
 ---
 
-# Simplifying Kubernetes for Developers {.semi-filtered data-background-image="images/abstract.jpg"}
+# Simplifying Kubernetes for Developers {.semi-filtered .r-fit-text data-background-image="images/1.png"}
 #### Calvin Hendryx-Parker, CTO
 #### Six Feet Up
-
-::::::::::::::{.credits}
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@davidclode?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from David Clode"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">David Clode</span></a>
-::::::::::::::
 
 ::: notes
 **Opening Hook (30 seconds)**: Acknowledge the elephant in the room. Show of hands: "How many of you think Kubernetes is too complicated?" Laugh with them, not at them. "You're absolutely right... but maybe not for the reasons you think."
@@ -26,7 +22,7 @@ keywords:
 
 ---
 
-# The Problem: Developer Inner Loop {data-background-image="images/old-books.jpg"}
+# The Problem: Developer Inner Loop {.r-fit-text data-background-image="images/2.png"}
 
 **Docker workflow we love:**
 - `docker build` → `docker run` → test → iterate
@@ -34,17 +30,13 @@ keywords:
 **Kubernetes reality:**
 - `docker build` → `docker push` → `kubectl apply` → wait → debug → repeat
 
-::::::::::::::{.credits}
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@trnavskauni?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Trnava University"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Trnava University</span></a>
-::::::::::::::
-
 ::: notes
 **The Pain Point (1 minute)**: This is where I connect with their frustration. Docker gave us this beautiful fast feedback loop. But Kubernetes broke it. The problem isn't the complexity of orchestration - it's that we lost our fast inner development loop. Minutes instead of seconds. Push-wait-debug instead of instant feedback.
 :::
 
 ---
 
-# What Developers Actually Want
+# What Developers Actually Want {.r-fit-text data-background-image="images/3.png"}
 
 - **Fast feedback loops** (seconds, not minutes)
 - **Simple mental models** (`npm start`, `flask run`)  
@@ -57,7 +49,7 @@ keywords:
 
 ---
 
-# Our Solution: Scaf + Tilt
+# Our Solution: Scaf + Tilt {.r-fit-text data-background-image="images/4.png"}
 
 ```bash
 # Bootstrap a complete project with Tilt built-in
@@ -83,7 +75,7 @@ $ tilt up
 
 ---
 
-# What You Get with Scaf
+# What You Get with Scaf {.r-fit-text data-background-image="images/5.png"}
 
 **Complete project template includes:**
 - Django backend + optional Next.js frontend
@@ -101,7 +93,7 @@ $ tilt up
 
 ---
 
-# The Real Problem Wasn't Complexity
+# The Real Problem Wasn't Complexity {.r-fit-text data-background-image="images/6.png"}
 
 > Kubernetes isn't too complicated.  
 > **It was missing bootstrapping and developer experience.**
@@ -116,7 +108,7 @@ $ tilt up
 
 ---
 
-# Questions?
+# Questions? {.r-fit-text data-background-image="images/8.png"}
 
 ### Calvin Hendryx-Parker, CTO, Six Feet Up
 ### [github.com/sixfeetup/scaf](https://github.com/sixfeetup/scaf)

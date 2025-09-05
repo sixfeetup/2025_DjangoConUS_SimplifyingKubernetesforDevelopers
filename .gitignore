@@ -28,3 +28,5 @@ index.html
 .github/
 .npmignore
 gulpfile.js
+/.codespellrc
+/.claude/settings.local.json
